@@ -10,22 +10,26 @@
 </head>
 
 <body>
-    <div class="menu">
+    <header>
         <div class="container">
-            <ul>
-                <li class="logo"><a href="index.html"><img src="img/logo.png" alt=""></a></li>
-                <li><a href="">Home</a></li>
-                <li><a href="">Product</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Login</a></li>
-            </ul>
+            <div id="menu">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="current"><a href="login.html">Login </a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
 
     <div class="container">
         <div class="loginbox">
             <h1>LOGIN</h1>
-            <form action="index.html" name="siswa" method="POST" onsubmit="validasi()">
+            <form action="login.html" name="siswa" method="POST" onsubmit="validasi()">
                 <p>NIS</p>
                 <input type="text" name="nis" id="nis" placeholder="NIS">
                 <p>PASSWORD</p>
@@ -34,7 +38,9 @@
             </form>
         </div>
     </div>
-
+    <footer>
+        <p>E-Class, Copyright &copy; 2019</p>
+    </footer>
 </body>
 <script type="text/javascript">
     function validasi() {

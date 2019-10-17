@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../img/web1.jpg) no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.loginbox {
+    margin: auto;
+    margin: 30px;
+    background: rgba(0, 0, 0, 0.527);
+    color: #fff;
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.loginbox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"],
+input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.loginbox input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.loginbox input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+
+}
+
+.menu {
+    background-color: rgba(1, 54, 116, 0.7);
+}
+
+.menu ul {
+    display: inline-flex;
+    margin: 30px;
+    margin-bottom: 20px;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 0 20px;
+    color: rgb(0, 0, 0);
+}
+
+.menu ul li a:hover {
+    cursor: pointer;
+    color: yellow;
+
+}
+
+.logo img {
+    width: 100px;
+    margin-top: -7px;
+    margin-right: 48px;
+}
+
+.active {
+    color: aqua;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.table1 {
+    font-family: sans-serif;
+    color: black;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.table1,
+th,
+td {
+    border-bottom: 1px solid black;
+    padding: 8px 20px;
+}
+
+thead {
+    background: rgba(255, 255, 0, 0.527);
+}
+
+tbody tr td a {
+    background-color: rgba(0, 255, 255, 0.774);
+    border: none;
+    color: black;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+.h1tugas {
+    font-size: 30px;
+    color: black;
+    margin-top: 30px;
+}
+
+button {
+    background-color: rgba(0, 255, 255, 0.774);
+    border: none;
+    color: black;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

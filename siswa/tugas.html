@@ -10,34 +10,51 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="menu">
-            <ul>
-                <li class="logo"><a href="index.html"><img src="../img/logo.png" alt=""></a></li>
-                <li><a href="tugas.html">Tugas</a></li>
-                <li><a href="materi.html">Materi</a></li>
-                <li><a href="profil.html">Profil</a></li>
-                <li><a href="#">Keluar</a></li>
-            </ul>
-        </div>
+
+    <div class="content">
+        <h1 class="h1tugas">TUGAS SISWA</h1>
+        <table class="table1">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Tugas</th>
+                    <th>Keterangan</th>
+                    <th>File</th>
+                    <th>Upload Tugas</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Rangkum materi 1</td>
+                    <td>Pengumpulan terakhir Selasa 16 Oktober 2019 jam 09.00</td>
+                    <td>7609_tugas1.pdf</td>
+                    <td><input type="file"></td>
+                    <td>
+                        <div class="content">
+                            <button onclick="document.getElementById('modal-wrapper').style.display='block'">
+                                Upload</button>
+                        </div>
+                        <div id="modal-wrapper" class="modal">
+                            <form action="index.html" class="modal-content animate" name="tambah" method="GET"
+                                onsubmit="validasimateri()">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('modal-wrapper').style.display='none'"
+                                        class="close" title="Close PopUp">&times;</span>
+                                    <img src="../img/logoblue.png" alt="Avatar" class="avatar">
+                                    <h2 style="color:black;">Berhasil Upload</h2>
+                                </div>
+                                <div class="content">
+                                    <button type="submit" style="color: white; background-color: green;">OK</button>
+                                </div>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-
-    <h1 class="h1tugas">TUGAS SISWA</h1>
-    <table class="table1">
-        <tr>
-            <th>No</th>
-            <th>Tanggal</th>
-            <th>Tugas</th>
-            <th>Keterangan</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-        </tr>
-    </table>
-
 </body>
 
 </html>

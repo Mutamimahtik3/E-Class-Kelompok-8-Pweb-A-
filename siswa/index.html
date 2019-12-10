@@ -1,27 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Siswa</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>E-Class</title>
+    <link rel="icon" type="image/png" href="../img/icon.png">
+    <script type="text/javascript" src="../js/jQuery.js"></script>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/nav.js"></script>
+
 </head>
 
 <body>
-    <div class="container">
-        <div class="menu">
+    <div class="content">
+        <nav>
+            <div class="menu-icon">
+                <i href="">=</i>
+            </div>
             <ul>
-                <li class="logo"><a href="index.html"><img src="../img/logo.png" alt=""></a></li>
-                <li><a href="tugas.html">Tugas</a></li>
-                <li><a href="materi.html">Materi</a></li>
-                <li><a href="profil.html">Profil</a></li>
-                <li><a href="#">Keluar</a></li>
+                <li><a class="klik_menu" id="beranda"><strong>E-Class</strong></a></li>
+                <li><a class="klik_menu" id="tugas">TUGAS</a></li>
+                <li><a class="klik_menu" id="materi">MATERI</a></li>
+                <li><a class="klik_menu" id="profil">profil</a></li>
+                <li><a href="../index.html">KELUAR</a></li>
             </ul>
-        </div>
+        </nav>
+
+
+
+        <div class="badan"> </div>
+
+
+        <footer>
+            <p><strong>E-Class, Copyright &copy; 2019</strong></p>
+        </footer>
+
+
     </div>
 </body>
-<h1 class="h1tugas">Selamat datang, Siswa</h1>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.klik_menu').click(function () {
+            var menu = $(this).attr('id');
+            if (menu == "beranda") {
+                $('.badan').load('beranda.html');
+            } else if (menu == "tugas") {
+                $('.badan').load('tugas.html');
+            } else if (menu == "materi") {
+                $('.badan').load('materi.html');
+            } else if (menu == "profil") {
+                $('.badan').load('profil.html');
+            }
+        });
+        $('.badan').load('beranda.html');
+
+    });
+</script>
 
 </html>

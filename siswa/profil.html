@@ -6,24 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Siswa</title>
+    <script type="text/javascript" src="../js/jQuery.js"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
+    <title>E-Class</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="menu">
-            <ul>
-                <li class="logo"><a href="index.html"><img src="../img/logo.png" alt=""></a></li>
-                <li><a href="tugas.html">Tugas</a></li>
-                <li><a href="materi.html">Materi</a></li>
-                <li><a href="profil.html">Profil</a></li>
-                <li><a href="#">Keluar</a></li>
-            </ul>
+    <div class="content">
+        <h1>Profil</h1>
+        <form action="#">
+            <table style="width: 100%;">
+                <tr>
+                    <td colspan="4" style="text-align: center; background-color: Green;color: white"><b>Informasi
+                            Umum</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td>Ahmad Zacky</td>
+                </tr>
+                <tr>
+                    <td>NIS</td>
+                    <td>:</td>
+                    <td>162410101021</td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>:</td>
+                    <td>**********</td>
+                </tr>
+            </table>
+            <br>
+        </form>
+        <div class="content">
+            <button onclick="document.getElementById('modal-wrapper').style.display='block'">
+                Ubah</button>
+        </div>
+        <div id="modal-wrapper" class="modal">
+
+            <form action="index.html" class="modal-content animate" name="profil" method="GET"
+                onsubmit="validasiprofil()">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close"
+                        title="Close PopUp">&times;</span>
+                    <img src="../img/logoblue.png" alt="Avatar" class="avatar">
+                    <h2 style="color:black;">Ubah Data</h2>
+                </div>
+                <div class="content">
+                    <input type="text" name="nis" id="nama" placeholder="Nama">
+                    <input type="text" name="nis" id="nis" placeholder="NIS/NIP">
+                    <input type="password" name="nis" id="pass" placeholder="password">
+                    <button type="submit" style="color: white; background-color: black;">tambah</button>
+                </div>
+            </form>
         </div>
     </div>
-
-
-
 </body>
+<script type="text/javascript">
+
+</script>
 
 </html>

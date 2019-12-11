@@ -1,31 +1,31 @@
     [{
-            "no": "1",
-            "materi": "Gunung Bromo",
-            "keterangan": "2560"
+            "no": "2",
+            "materi": "materi 2",
+            "keterangan": "Design Web menggunakan bootstrap"
+        },
+        {
+            "no": "3",
+            "materi": "materi 3",
+            "keterangan": "Design Web menggunakan bootstrap"
+        },
+        {
+            "no": "4",
+            "materi": "materi 4",
+            "keterangan": "Design Web menggunakan bootstrap"
         },
         {
             "no": "1",
-            "materi": "Pantai Papuma",
-            "keterangan": "3030"
+            "materi": "materi 1",
+            "keterangan": "Design Web menggunakan bootstrap"
         },
         {
             "no": "1",
-            "materi": "Kawah Ijen",
-            "keterangan": "6070"
+            "materi": "materi 1",
+            "keterangan": "Design Web menggunakan bootstrap"
         },
         {
             "no": "1",
-            "materi": "Baluran",
-            "keterangan": "9870"
-        },
-        {
-            "no": "1",
-            "materi": "Candi Borobudur",
-            "keterangan": "9654"
-        },
-        {
-            "no": "1",
-            "materi": "Labuan Najo",
-            "keterangan": "9296"
+            "materi": "materi 1",
+            "keterangan": "Design Web menggunakan bootstrap"
         }
     ]

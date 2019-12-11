@@ -27,12 +27,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Materi 1</td>
-                        <td>Design web menggunakan bootstrap</td>
-                        <td><button>Download</button></td>
-                    </tr>
+
                 </tbody>
             </table>
         </div>
@@ -49,14 +44,14 @@
                     console.log(data);
 
                     $.each(data, function (n, elem) {
-                        console.log(' no ' + elem['no'] + ' - materi ' + elem['maeteri'] +
+                        console.log(' materi ' + elem['materi'] +
                             ' - keterangan ' + elem['keterangan'])
                         $('.daftar').append(`
 
 <table class="table1" id="tabel">
     <tbody>
         <tr>
-                    <td>` + elem['no'] + `</td>
+                    <td></td>
                     <td>` + elem['materi'] + `</td>
                     <td>` + elem['keterangan'] + `</td>
                     <td><button>Download</button></td>

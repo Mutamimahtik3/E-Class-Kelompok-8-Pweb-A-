@@ -87,7 +87,16 @@ a {
     text-align: center;
     border-collapse: collapse;
     margin-bottom: 10px;
+    counter-reset: serial-number;
 }
+
+
+.table1 td:first-child:before {
+    counter-increment: serial-number;
+    content: counter(serial-number);
+}
+
+
 
 .table1,
 th,

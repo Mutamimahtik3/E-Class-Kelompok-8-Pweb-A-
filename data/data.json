@@ -1,31 +1,31 @@
     [{
+            "no": "1",
             "materi": "Gunung Bromo",
             "keterangan": "2560",
-            "download": "bromoSemeru.jpg"
         },
         {
+            "no": "1",
             "materi": "Pantai Papuma",
             "keterangan": "3030",
-            "download": "papuma.jpg"
         },
         {
+            "no": "1",
             "materi": "Kawah Ijen",
             "keterangan": "6070",
-            "download": "ijen.jpg"
         },
         {
+            "no": "1",
             "materi": "Baluran",
             "keterangan": "9870",
-            "download": "baluran.jpg"
         },
         {
+            "no": "1",
             "materi": "Candi Borobudur",
             "keterangan": "9654",
-            "download": "borobudur.jpg"
         },
         {
+            "no": "1",
             "materi": "Labuan Najo",
             "keterangan": "9296",
-            "download": "labuanBajo.jpg"
         }
     ]

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <script type="text/javascript" src="../js/jQuery.js"></script>
     <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="../js/tambah.js"></script>
     <title>E-Class</title>
 </head>
 
@@ -29,83 +30,55 @@
             </ul>
         </nav>
 
+        <section id="boxes" style="border-radius: 15px;">
+            <div class="content">
+                <form class="input1" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div class="box">
+                        <label>Nama</label><label class="validation-error hide" id="namaValidationError">This
+                            wajib diisi</label><br>
+                        <input type="text" name="nama" id="nama">
+                    </div>
+                    <div class="box">
+                        <label>NIS</label><label class="validation-error hide" id="namaValidationError">This
+                            wajib diisi</label><br>
+                        <input type="text" name="nis" id="nis">
+                    </div>
+                    <div class="box">
+                        <label>Password</label><label class="validation-error hide" id="namaValidationError">This
+                            wajib diisi</label><br>
+                        <input type="text" name="pass" id="pass">
+                    </div>
+                    <div class="form-action-buttons box">
+                        <input type="submit" value="Submit" style="width: 30%;">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <table class="table1" id="table1list">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>NIS</th>
+                    <th>Password</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
 
 
-        <div class="container">
-            <h1 class="h1tugas">SISWA</h1>
-            <table class="table1">
-                <thead>
-                    <tr>
-                        <th>No</th>
-                        <th>Nama</th>
-                        <th>NIS</th>
-                        <th>Password</th>
-                        <th>Aksi</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr id="hapus2">
-                        <td id="hapus2">1</td>
-                        <td id="hapus2">Ahmad Zacky</td>
-                        <td id="hapus2">162410101021</td>
-                        <td id="hapus2">*******</td>
-                        <td id="hapus2"><button id="hapus3">Hapus</button>
-                            <script>
-                                $(document).ready(function () {
-                                    $('#hapus3').click(function () {
-                                        $('#hapus2').hide();
-                                    })
-                                });
-                            </script>
-                        </td>
-                    </tr>
-                    <tr id="hapus1">
-                        <td id="hapus1">2</td>
-                        <td id="hapus1">Rico April Nando</td>
-                        <td id="hapus1">162410101021</td>
-                        <td id="hapus1">*******</td>
-                        <td id="hapus1"><button id="hapus">Hapus</button>
-                            <script>
-                                $(document).ready(function () {
-                                    $('#hapus').click(function () {
-                                        $('#hapus1').hide();
-                                    })
-                                });
-                            </script>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <script src="script.js"></script>
+</body>
 
-        <div class="content">
-            <button onclick="document.getElementById('modal-wrapper').style.display='block'">
-                Tambah</button>
-        </div>
-        <div id="modal-wrapper" class="modal">
+</html>
 
-            <form action="index.html" class="modal-content animate" name="siswa" method="GET"
-                onsubmit="validasisiswa()">
-                <div class="imgcontainer">
-                    <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close"
-                        title="Close PopUp">&times;</span>
-                    <img src="../img/logoblue.png" alt="Avatar" class="avatar">
-                    <h2 style="color:black;">Tambah SISWA</h2>
-                </div>
-                <div class="content">
-                    <input type="text" name="nis" id="no" placeholder="no">
-                    <input type="text" name="nis" id="nama" placeholder="Nama">
-                    <input type="text" name="nis" id="nis" placeholder="NIS">
-                    <input type="text" name="nis" id="pass" placeholder="Password">
-                    <button type="submit" style="color: white; background-color: black;">tambah</button>
-                </div>
-            </form>
-        </div>
-
-        <footer>
-            <p><strong>E-Class, Copyright &copy; 2019</strong></p>
-        </footer>
-    </div>
+<footer>
+    <p><strong>E-Class, Copyright &copy; 2019</strong></p>
+</footer>
+</div>
 </body>
 
 </html>

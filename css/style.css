@@ -86,14 +86,7 @@ a {
     margin: auto;
     text-align: center;
     border-collapse: collapse;
-    margin-bottom: 10px;
-    counter-reset: serial-number;
-}
-
-
-.table1 td:first-child:before {
-    counter-increment: serial-number;
-    content: counter(serial-number);
+    margin: 10px;
 }
 
 
@@ -367,6 +360,19 @@ textarea {
 
 .animate {
     animation: zoom 0.6s
+}
+
+label.validation-error {
+    color: red;
+    margin-left: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+input:read-only {
+    background-color: rgba(0, 0, 0, 0.267);
 }
 
 @keyframes zoom {

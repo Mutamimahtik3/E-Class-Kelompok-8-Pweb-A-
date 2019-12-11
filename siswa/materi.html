@@ -36,9 +36,12 @@
 
     <script src="../js/jquery.min.js"></script>
     <script type="text/javascript">
+        var x = 1;
+
+
         $(".load-data").click(function () {
             $.getJSON(
-                'https://raw.githubusercontent.com/Mutamimahtik3/Mutamimahtik3.github.io/master/data/data.json',
+                '../data/data.json',
                 function (data) {
 
                     console.log(data);
@@ -51,7 +54,7 @@
 <table class="table1" id="tabel">
     <tbody>
         <tr>
-                    <td></td>
+                    <td>` + x++ + `</td>
                     <td>` + elem['materi'] + `</td>
                     <td>` + elem['keterangan'] + `</td>
                     <td><button>Download</button></td>

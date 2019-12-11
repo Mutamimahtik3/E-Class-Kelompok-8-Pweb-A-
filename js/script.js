@@ -5,12 +5,11 @@ window.onclick = function (event) {
     }
 }
 
-var modal = document.getElementById('modal-wrapper');
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+$(document).ready(function () {
+    $(".menu-icon").on("click", function () {
+        $("nav ul").toggleClass("showing");
+    });
+});
 
 
 function validasisiswa() {

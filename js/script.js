@@ -107,7 +107,7 @@ function validasimateri() {
     }
 }
 
-function validasisiswa() {
+function validasisiswatambah() {
     var x = document.forms["siswa"]["no"].value;
     if (x = null || x == "") {
         alert("Isi NO!!!");

@@ -1,68 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <title>E-Class</title>
-    <link rel="icon" type="image/png" href="../img/icon.png">
+    <link rel="stylesheet" href="../css/style.css">
     <script type="text/javascript" src="../js/jQuery.js"></script>
-    <script type="text/javascript" src="../js/nav.js"></script>
-
+    <script type="text/javascript" src="../js/script.js"></script>
+    <title>E-Class</title>
 </head>
 
 <body>
+
     <div class="content">
         <nav>
             <div class="menu-icon">
                 <i href="">=</i>
             </div>
             <ul>
-                <li><a href="beranda.html" class="klik_menu" id="beranda"><strong>E-Class</strong></a></li>
-                <li><a class="klik_menu" id="tugas">TUGAS</a></li>
-                <li><a class="klik_menu" id="pengumpulan">PENGUMPULAN</a></li>
-                <li><a class="klik_menu" id="materi">MATERI</a></li>
-                <li><a class="klik_menu" id="siswa">SISWA</a></li>
-                <li><a class="klik_menu" id="profil">PROFIL</a></li>
+                <li><a href="index.html"><strong>E-Class</strong></a></li>
+                <li><a href="tugas.html">TUGAS</a></li>
+                <li><a href="pengumpulan.html">PENGUMPULAN</a></li>
+                <li><a href="materi.html">MATERI</a></li>
+                <li><a href="siswa.html">SISWA</a></li>
+                <li><a href="profil.html">PROFIL</a></li>
                 <li><a href="../index.html">KELUAR</a></li>
             </ul>
         </nav>
 
 
+        <section id="showcase">
+            <div class="content">
+                <h1>E-Class</h1>
+                <p>SELAMAT DATANG GURU</p>
+            </div>
 
-        <div class="badan"> </div>
 
+        </section>
+
+        <section id="boxes">
+            <div class="content">
+                <div class="box">
+                    <img src="../img/facebook.png">
+                    <h2>Facebook</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet
+                        ultricies
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="../img/wa.png">
+                    <h2>WA</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet
+                        ultricies
+                    </p>
+                </div>
+                <div class="box">
+                    <img src="../img/twitter.png">
+                    <h2>Twitter</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet
+                        ultricies
+                    </p>
+                </div>
+            </div>
+
+        </section>
         <footer>
             <p><strong>E-Class, Copyright &copy; 2019</strong></p>
         </footer>
-
-
     </div>
 </body>
-
 <script type="text/javascript">
-    $(document).ready(function () {
-        $('.klik_menu').click(function () {
-            var menu = $(this).attr('id');
-            if (menu == "beranda") {
-                $('.badan').load('beranda.html');
-            } else if (menu == "tugas") {
-                $('.badan').load('tugas.html');
-            } else if (menu == "pengumpulan") {
-                $('.badan').load('pengumpulan.html');
-            } else if (menu == "materi") {
-                $('.badan').load('materi.html');
-            } else if (menu == "siswa") {
-                $('.badan').load('siswa.html');
-            } else if (menu == "profil") {
-                $('.badan').load('profil.html');
-            }
-        });
-        $('.badan').load('beranda.html');
 
-    });
 </script>
 
 </html>
